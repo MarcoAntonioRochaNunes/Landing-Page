@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #5E5E5E;
+    font-family: 'Roboto', sans-serif;;
+    
+}
+.Pbarra{
+    background-color: #099631;
+    width: auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    animation-name: shadow;
+    animation-duration: 2s;
+    
+}
+.logo{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+.Sbarra{
+    height: 89vh;
+    width: 50%;
+    background-color: #111;
+    animation-name: transition;
+    animation-duration: 3s;
+    float: left;
+
+    text-align: center;
+}
+.Tbarra{
+    height: 89vh;
+    width: 50%;
+    display: inline-block;
+    background-color: #5E5E5E;
+
+    text-align: center;
+    animation-name:shadow;
+    animation-duration: 2s;
+}
+.Ptexto{
+    color:#5E5E5E ;
+    font-size: 2rem;
+}
+.Stexto{
+    color: #111;
+    font-size: 2rem;
+}
+@keyframes transition{
+    from{
+        position: relative;
+        opacity: 0;
+        left: -10px;
+    }
+    to{
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes shadow{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
