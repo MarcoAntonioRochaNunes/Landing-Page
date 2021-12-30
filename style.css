@@ -1,70 +1,83 @@
 body{
-    margin:0;
+    margin: 0;
     padding: 0;
-    background-color: #5E5E5E;
-    font-family: 'Roboto', sans-serif;;
-    
 }
-.Pbarra{
-    background-color: #099631;
-    width: auto;
+header{
+    background-color: white;
     height: 70px;
+    line-height: 70px;
     display: flex;
     align-items: center;
-    animation-name: shadow;
-    animation-duration: 2s;
-    
+    justify-content: space-between;
 }
 .logo{
+    margin: 20px;
+}
+.pesquisa{
+    width: 500px;
     height: 30px;
-    width: 30px;
-    margin: 5px;
+    border-radius: 9px;
+    border: none;
+    outline: none;   
 }
-.Sbarra{
-    height: 89vh;
-    width: 50%;
-    background-color: #111;
-    animation-name: transition;
-    animation-duration: 3s;
+.pesquisabox{
+    position: relative;
+    left: -100px;
+}
+.icon{
+    position: relative;
+    height: 15px;
+    left: -30px;
+    line-height: 29px;
+}
+nav ul{
+    display: flex;
+    list-style:none;
     float: left;
-
-    text-align: center;
 }
-.Tbarra{
+nav li{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.02rem;
+}
+nav a{
+    text-decoration: none;
+    color: #656565;
+}
+.container{
+    width: 100vw;
     height: 89vh;
-    width: 50%;
-    display: inline-block;
-    background-color: #5E5E5E;
-
+    background-image: url(images/cropped-1920-1080-820279.jpg);
+    background-size:cover;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.box{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    margin-left: 50px; 
+}
+.text1{
     text-align: center;
-    animation-name:shadow;
-    animation-duration: 2s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
 }
-.Ptexto{
-    color:#5E5E5E ;
-    font-size: 2rem;
+.text1 p{
+    color: #656565;   
 }
-.Stexto{
-    color: #111;
-    font-size: 2rem;
+.text1 button{
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    margin-top: 100px;
 }
-@keyframes transition{
-    from{
-        position: relative;
-        opacity: 0;
-        left: -10px;
-    }
-    to{
-        left: 0px;
-        opacity: 1;
-    }
-}
-
-@keyframes shadow{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+.text1 a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
 }
