@@ -9,6 +9,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    animation-name: entrada;
+    animation-duration: 3s;
 }
 .logo{
     margin: 20px;
@@ -47,7 +50,7 @@ nav a{
 .container{
     width: 100vw;
     height: 89vh;
-    background-image: url(images/cropped-1920-1080-820279.jpg);
+    background-image: url(images/485875.jpg);
     background-size:cover;
     background-color: black;
     display: flex;
@@ -57,7 +60,10 @@ nav a{
     width: 400px;
     height: 500px;
     background-color: white;
-    margin-left: 50px; 
+    margin-left: 50px;
+    
+    animation-name: entrada;
+    animation-duration: 3s;
 }
 .text1{
     text-align: center;
@@ -80,4 +86,12 @@ nav a{
     text-decoration: none;
     font-size: 1.2rem;
     padding: 10px;
+}
+@keyframes entrada{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
